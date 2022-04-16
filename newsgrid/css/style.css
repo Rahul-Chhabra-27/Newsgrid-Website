@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #c72727;
+  --secondary-color: #f99500;
+  --light-color: #f3f3f3;
+  --dark-color: #333;
+  --max-width: 1100px;
+}
+.category {
+  --sports-color: var(--secondary-color);
+  --ent-color: #a66bbe;
+  --tech-color: #009cff;
+}
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  background: var(--light-color);
+}
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Staatliches", cursive;
+  margin-bottom: 0.55rem;
+  line-height: 1.6;
+}
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  overflow: hidden;
+}
+#main-nav {
+  position: sticky;
+  top:0;
+  z-index:2;
+  background-color: #fff;
+}
+.container {
+  display: grid;
+  grid-template-columns: 6fr 3fr 2fr;
+  align-items: center;
+}
+.logo {
+  width:180px;
+}
+#main-nav ul {
+  justify-self:end;
+  display: flex;
+}
+#main-nav .container ul li a {
+  padding:0.75rem;
+  font-weight:bold;
+}
+#main-nav .container ul li a.current {
+  background: var(--primary-color);
+  color:#fff;
+}
+#main-nav .container ul li a:hover {
+  background:var(--light-color);
+  color:var(--dark-color);
+}
+#main-nav .social {
+  justify-self:center;
+}
+#mian-nav .social a i {
+  color:#777;
+  margin-right:.5rem;
+}
